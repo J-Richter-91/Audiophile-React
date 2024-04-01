@@ -1,4 +1,4 @@
-import { useParams, Link } from "react-router-dom"
+import { useParams, Link, useLocation } from "react-router-dom"
 import { useState, useLayoutEffect } from "react";
 import ProductRow from "../Components/ProductRow";
 import Header from '../Components/Header'
@@ -11,6 +11,7 @@ import '../Styles/cart-summary.css'
 export default function ProductList({products}){
 const {category} = useParams();
 const [mobileOpen, setMobileOpen] = useState(false)
+const location = useLocation()
 console.log(category)
 
 const filteredProducts = products.filter(item => item.category === category);
@@ -33,7 +34,7 @@ console.log(mobileOpen)
 
 useLayoutEffect(() => {
     window.scrollTo(0, 0)
-});
+},[location]);
 
     return(
         <>
