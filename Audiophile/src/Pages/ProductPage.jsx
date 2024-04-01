@@ -1,4 +1,4 @@
-import { useParams, Link } from "react-router-dom"
+import { useParams, Link, useLocation} from "react-router-dom"
 import { useEffect, useState, useContext, useLayoutEffect} from "react"
 import CartContext  from "../Context/CartContext"
 import ProductHeader from "../Components/ProductHeader"
@@ -14,10 +14,11 @@ export default function ProductPage({products}){
     //const [cart, setCart] = useState([])
     const {id} = useParams()
     const product = products.find(item => item.id === parseInt(id));
-    const [count, setCount] = useState(1);
-    const {cart, setCart, updateCart, resetCart} = useContext(CartContext)
+    
+    const {cart, setCart, updateCart, resetCart, count, setCount} = useContext(CartContext)
     const [mobileOpen, setMobileOpen] = useState(false)
     const [cartOpen, setCartOpen] = useState(false)
+    const location = useLocation()
 
     function mobileHandler(){
         setMobileOpen(prevState => !prevState)
@@ -58,7 +59,7 @@ export default function ProductPage({products}){
 
    useLayoutEffect(() => {
     window.scrollTo(0, 0)
-});
+},[location]);
    
 
     return(
