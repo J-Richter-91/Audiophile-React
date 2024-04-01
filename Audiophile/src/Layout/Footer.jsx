@@ -13,9 +13,9 @@ export default function Footer(){
                     />
                   <div className="footer-nav-link-container">
                     <Link to='/' target='_top' className="footer-nav-links">HOME</Link>
-                    <Link to='Products/headphones'  target='_top' className="footer-nav-links">HEADPHONES</Link>
-                    <Link to='Products/speakers'  target='_top' className="footer-nav-links">SPEAKERS</Link>
-                    <Link to='Products/earphones'  target='_top' className="footer-nav-links">EARPHONES</Link>
+                    <Link to='Products/headphones'   className="footer-nav-links">HEADPHONES</Link>
+                    <Link to='Products/speakers'   className="footer-nav-links">SPEAKERS</Link>
+                    <Link to='Products/earphones'   className="footer-nav-links">EARPHONES</Link>
                   </div>
                   
                 </div>
