@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+:root{
+    --orange: #D87D4A;
+    --lightOrange: #FBAF85;
+    --black: #101010;
+    --gray: #F1F1F1;
+    --lightGray: #FAFAFA;
+    --white: #FFFFFF;
+    --darkerBlack: #000000;
+}
+
+footer{
+    background-color: var(--black);
+    height: 400px;
+    margin-top: 175px;
+    width: 100vw;
+    position: relative;
+}
+
+.footer-nav{
+    display: flex;
+    align-items: center;
+    padding-top: 75px;
+   
+}
+
+.footer-logo{
+    margin-left: 75px;
+}
+
+.footer-nav-link-container{
+    margin-left: auto;
+    margin-right: 15px;
+}
+
+.footer-nav-links{
+    color: var(--white);
+    padding-right: 25px;
+    text-decoration: none;
+}
+
+.footer-nav-links:hover{
+    color: var(--orange);
+    transition: 0.5;
+}
+
+.footer-nav-links:hover{
+    color:#D87D4A;
+    transition: 0.5s;
+}
+
+.footer-text-container{
+    display: flex;
+    flex-direction: column;
+    width: 540px;
+    margin-top: 50px;
+    margin-left: 75px;
+}
+
+.footer-description{
+    font-family: manrope;
+    color: var(--gray);
+    opacity: 0.5;
+}
+
+.copyright{
+    color: var(--gray);
+    opacity: 0.5;
+   
+}
+
+.social-icons-row{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 45px;
+    margin-top: -150px;
+    gap: 15px;
+    width: 100px;
+}
+
+@media screen and (max-width: 750px){
+    .footer-nav{
+        flex-direction: column;
+        align-items: start;
+        gap: 25px;
+    }
+
+    .footer-nav-link-container{
+        margin-left: 75px;
+    }
+
+  
+
+    .social-icons-row{
+        margin-top: -40px;
+    }
+}
+
+@media screen and (max-width: 689px){
+    footer{
+        height: 600px;;
+    }
+
+    .footer-nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-logo{
+        margin-left:auto;
+        margin-right: auto;
+    }
+
+    .footer-nav-link-container{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0;
+    }
+
+    .footer-nav-links{
+        padding: 0;
+        text-align: center;
+        opacity: 0.9;
+        padding-bottom: 5px;
+    }
+
+    .footer-text-container{
+        text-align: center;
+       margin-left: auto;
+       margin-right: auto;
+        width: 326px;
+    }
+
+    .social-icons-row{
+        margin-top: 0;
+        margin-left:auto;
+        margin-right: auto;
+    }
+}

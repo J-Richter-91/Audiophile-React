@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+:root{
+    --orange: #D87D4A;
+    --lightOrange: #FBAF85;
+    --black: #101010;
+    --gray: #F1F1F1;
+    --lightGray: #FAFAFA;
+    --white: #FFFFFF;
+    --darkerBlack: #000000;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hamburger-icon{
+    display: none;
+}
+
+.home-header{
+    background: url('/Home/image-hero.jpg');
+    background-repeat: no-repeat;
+    background-position:45% center;
+    background-size: 100vw 729px;
+    min-height: 729px;
+    width: 100vw;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 35px;
+    width: 75%;
+}
+
+
+
+.nav-links{
+    padding-right: 25px;
+    font-family: manrope;
+    color: var(--white);
+    text-decoration: none;
+}
+
+.nav-links:hover{
+    cursor: pointer;
+    color: var(--orange);
+    transition: 0.5s;
+}
+
+.product-info-container{
+    width: 349px;
+    margin-top: 130px;
+    margin-left: 12%;
+}
+
+.new-product{
+    color: var(--lightGray);
+    letter-spacing: 4px;
+    font-family: manrope;
+}
+
+.product-title{
+    color: var(--white);
+    letter-spacing: 2px;
+    font-family: manrope;
+    text-transform: uppercase;
+}
+
+.product-description{
+    color: var(--lightGray);
+    font-family: manrope;
+    line-height: 25px;
+}
+
+.header-btn{
+    border: none;
+    background-color: var(--orange);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+    font-family: manrope;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    margin-top: 50px;
+    text-decoration: none;
+    width: 244px;
+}
+
+.header-btn:hover{
+    background-color: var(--lightOrange);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.home-product-gallery-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 150px;
+}
+
+.zx9-container{
+    background-color: var(--orange);
+    background-image: url('/Home/pattern-circles.svg');
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    height: 560px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    overflow: hidden;
+    position: relative;
+    width: 1110px;
+}
+
+.zx9-speaker-img{
+    position: absolute;
+    left: 15%;
+    top: 15%;
+    width: 410px;
+}
+
+.zx9-info-container{
+    width: 349px;
+    height: 303px;
+    margin-left: auto;
+    margin-right: 50px;
+    margin-top: 110px;
+}
+
+.zx9-title{
+    color: var(--white);
+    font-family: manrope;
+    font-size: 56px;
+    font-weight: bold;
+}
+
+.zx9-description{
+    color: var(--white);
+    font-size: 15px;
+    line-height: 25px;
+    margin-bottom: 35px;
+    opacity: 0.8;
+}
+
+.see-product-btn{
+    background-color: var(--darkerBlack);
+    color: var(--white);
+    font-family: manrope;
+    padding: 8px 40px;
+    text-decoration: none;
+}
+
+.see-product-btn:hover{
+    background-color: #979797;
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+.zx7-speaker-container{
+    background-image: url('/Home/image-speaker-zx7.jpg');
+    border-radius: 5px;
+    height: 320px;
+    margin-bottom: 50px;
+    width: 1110px;
+}
+
+.zx7-speaker-description-container{
+    margin-left: 100px;
+    margin-top: 100px;
+}
+
+.zx7-title{
+    font-family: manrope;
+    font-size: 28px;
+}
+
+.see-product-btn-transparent{
+    border: solid 1px black;
+    color: var(--black);
+    padding: 8px 40px;
+    text-decoration: none;
+}
+
+.see-product-btn-transparent:hover{
+    background-color: var(--black);
+    color: var(--white);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.home-earphones-row{
+    display: flex;
+    gap: 30px;
+}
+
+.earphone-img-container{
+    background-image: url('/Home/image-earphones-yx1.jpg');
+    border-radius: 5px;
+    height: 320px;
+    width: 540px;
+}
+
+.earphone-text-container{
+    background-color: var(--gray);
+    border-radius: 5px;
+    height: 320px;
+    width: 540px;
+}
+
+.earphone-title{
+    font-family: manrope;
+    font-size: 28px;
+    margin-top: 100px;
+    margin-left: 80px;
+    margin-bottom: 30px;
+}
+
+.see-product-btn-earphones{
+    border: solid 1px black;
+    color: var(--black);
+    margin-left: 80px;
+    padding: 8px 40px;
+    text-decoration: none;
+}
+
+.see-product-btn-earphones:hover{
+    cursor: pointer;
+    background-color: var(--black);
+    color: var(--white);
+    transition: 0.5s;
+}
+
+@media screen and (max-width: 1200px){
+    .zx9-container{
+        width: 950px;
+    }
+
+    .zx9-info-container{
+        margin-right: 20px;
+    }
+
+    .zx7-speaker-container{
+        width: 950px;
+    }
+    
+    .earphone-img-container,.earphone-text-container{
+        width: 460px;
+    }
+
+    
+}
+
+@media screen and (max-width: 950px){
+    nav{
+        justify-content: space-around;
+    }
+
+    .hamburger-logo-container{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .hamburger-icon{
+        display: block;
+       
+        height:15px
+    }
+
+    .home-header{
+       background-image: url("/Home/image-header-tablet.jpg");
+        width: 100vw;
+    }
+
+    .product-info-container{
+        margin-left:auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .header-btn{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .nav-links{
+        display: none;
+    }
+
+    .zx9-container{
+        width: 689px;
+        height: 720px;
+        background-position-x: 50%;
+        background-position-y: 120%;
+    }
+
+    .zx9-speaker-img{
+        width: 197px;
+        top: 5%;
+        left: 37%;
+    }
+
+    .zx9-info-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 300px;
+        width: 349px;
+    }
+
+    .zx9-title{
+        width: 269px;
+        text-align: center;
+    }
+
+    .zx9-description{
+        width: 349px;
+        text-align: center;
+    }
+
+    .zx7-speaker-container{
+        width: 689px;
+        background-position: 55% ;
+    }
+
+    .home-earphones-row{
+        gap: 10px;
+    }
+
+    .earphone-img-container, .earphone-text-container{
+        width: 339px;
+    }
+}
+
+@media screen and (max-width: 689px){
+    .zx9-container{
+        width: 327px;
+        height: 600px;
+    }
+
+    .zx9-speaker-img{
+        left: 25%;
+    }
+
+    .zx9-title{
+        font-size: 36px;
+        width: 280px;
+        line-height: 40px;
+    }
+
+    .zx9-description{
+        width: 280px;
+    }
+
+    .zx7-speaker-container{
+        width: 327px;
+        height: 320px;
+    }
+
+    .zx7-speaker-description-container{
+        margin-left: 20px;
+        margin-top: 70px;
+    }
+
+    .home-earphones-row{
+        flex-direction: column;
+        width: 326px;
+    }
+
+    .earphone-text-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .earphone-title{
+        margin-left: 0;
+    }
+
+    .see-product-btn-earphones{
+        margin-left: 0;
+    }
+}

@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+:root{
+    --orange: #D87D4A;
+    --lightOrange: #FBAF85;
+    --black: #101010;
+    --gray: #F1F1F1;
+    --lightGray: #FAFAFA;
+    --white: #FFFFFF;
+    --darkerBlack: #000000;
+}
+
+
+
+.product-header{
+    height: 97px;
+    background-color: var(--black);
+    width: 100vw;
+}
+
+.logo{
+    margin-right: 50px;
+}
+
+.cart-icon:hover{
+    cursor: pointer;
+}

@@ -1,0 +1,133 @@
+:root{
+    --orange: #D87D4A;
+    --lightOrange: #FBAF85;
+    --black: #101010;
+    --gray: #F1F1F1;
+    --lightGray: #FAFAFA;
+    --white: #FFFFFF;
+    --darkerBlack: #000000;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+.product-list-header{
+    background-color: var(--black);
+    height: 336px;
+    padding: 0;
+    margin-bottom: 150px;;
+}
+
+.product-list-category{
+    color: var(--white);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-family: manrope;
+    margin-top: 125px;
+}
+
+.product-list-container{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 200px;
+    justify-content: center;
+    margin-bottom: 170px;
+}
+
+.product-list-container:nth-child(even) {
+    flex-direction: row;
+}
+
+
+
+.product-img{
+    border-radius: 5px;
+    height: 560px;
+    width: 540px;
+}
+
+.product-list-info-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 445px;
+}
+
+.product-list-title{
+    font-family: manrope;
+    font-size: 40px;
+}
+
+.product-list-description{
+    font-family: manrope;
+    font-size: 15px;
+    opacity: 0.5;
+}
+
+.product-list-btn{
+    background-color: var(--orange);
+    color: white;
+    font-family: manrope;
+    padding: 10px 30px;
+    text-decoration: none;
+    margin-right: auto;
+    margin-top: 25px;
+}
+
+.product-list-btn:hover{
+    background-color: var(--lightOrange);
+    transition: 0.5s;
+}
+
+@media screen and (max-width: 1200px){
+    .product-list-container{
+        gap: 100px;
+    }
+}
+
+@media screen and (max-width: 950px){
+
+    .product-list-container:nth-child(even) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+    .product-list-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .product-img{
+        width: 689px;
+        height: 352px;
+    }
+
+    .product-list-info-container{
+        text-align: center;
+    }
+
+    .product-list-title, .product-list-description{
+        margin-bottom: 0;
+    }
+
+    .product-list-btn{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 689px){
+    .product-img{
+        width: 326px;
+    }
+
+   .product-list-info-container{
+    width: 326px;
+   }
+}

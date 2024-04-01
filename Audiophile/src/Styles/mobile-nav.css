@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+.mobile-overlay{
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 999;
+}
+
+.mobile-overlay.active{
+    display: block;
+}
+
+
+.background{
+    display: none;
+    background-color: white;
+    height: 340px;
+    width: 100vw;
+}
+
+.background.active{
+    display: flex;
+    z-index: 1001;
+}
+
+.mobile-navigation-row{
+    display: none;
+    gap: 25px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+    margin-bottom: 200px;
+    background-color: white;
+    height: 100%;
+    width: 100%;
+}
+
+.mobile-navigation-row.active{
+    display: flex;
+    z-index: 1000;
+}
+
+.mobile-navigation-container{
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    align-items: center;
+    margin-top: 100px;
+    background-color: var(--gray);
+    border-radius: 15px;
+    height: 165px;
+    position: relative;
+    width: 223px;
+}
+
+
+
+.mobile-navigation-picture{
+    position: absolute;
+    width: 84px;
+    left: 32%;
+    bottom: 75%;
+}
+
+.mobile-navigation-shadow{
+    position: absolute;
+    left: 5%;
+    bottom: 40%;
+}
+
+.mobile-navigation-title{
+    font-family: manrope;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 80px;
+}
+
+.mobile-shop-row{
+    margin-top: 15px;
+}
+
+.navigation-btn{
+    color: black;
+    font-family: manrope;
+    margin-right: 15px;
+    opacity: 0.5;
+    text-decoration: none;
+}
+
+.navigation-btn:hover{
+    color: #D87D4A;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+
+
+
+@media screen and (max-width: 750px){
+    .background{
+        height: 750px;
+    }
+
+    .mobile-navigation-row{
+        flex-direction: column;
+        align-items: center;
+        padding-top: 50px;
+        gap: 50px;
+    }
+
+    .mobile-navigation-container{
+        width: 327px;
+        margin-top: 25px;
+    }
+    
+    .mobile-navigation-title{
+        margin-top: 70px;
+    }
+
+    .mobile-navigation-picture{
+        left: 38%;
+    }
+
+    .mobile-navigation-shadow{
+        left: 18%;
+    }
+}
