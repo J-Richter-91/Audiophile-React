@@ -13,7 +13,7 @@ export default function ProductRow(){
       className="navigation-shadow" 
       src='/Shared/shadow.png'
       alt='shadow' />
-      <h1 className="navigation-title">HEADPHOHNES</h1>
+      <h1 className="navigation-title">HEADPHONES</h1>
       <div className="shop-row">
         <Link to='/products/headphones'  className="navigation-btn">SHOP</Link>
         <img alt='arrow' src='/Shared/icon-arrow-right.svg' />
