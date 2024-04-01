@@ -178,7 +178,7 @@ export default function Checkout(){
                 </div>
                 
             </form>
-            {cart &&
+            {cart.length > 0 ?
             <div className="order-summary-container">
                 <p className="summary-title">Summary</p>
                 {cart.map((item,index) => (
@@ -194,6 +194,7 @@ export default function Checkout(){
                 <div className="total-row">
 
 </div>
+
             <div className="subtotal-row">
                 <p className="order-summary-row-title">Total</p>
                 <p className="order-summary-row-value">${subTotal.toLocaleString()}</p>
@@ -212,6 +213,8 @@ export default function Checkout(){
             </div>
                 <button className="pay-btn" onClick={handleSubmit(onSubmit)}  type="submit">CONTINUE & PAY</button>
             </div>
+            :
+            <div></div>
 }
             </div>
             <div onClick={() => closePopup()} className={`order-confirm-overlay ${isSummaryActive ? 'active' : ''}`}></div>
@@ -223,7 +226,7 @@ export default function Checkout(){
                         <div className="product-confirmation-container">
                             
                             
-                            {!viewAllProducts ? 
+                            {cart.length > 0 && !viewAllProducts ? 
                             <>
                                 <div className="order-confirmation-product-row">
                                 <img className="order-confirmation-product-img" alt="product img" src={cart[0].Img}  />
@@ -261,7 +264,7 @@ export default function Checkout(){
                     </div>
                     <Link className="back-to-home-btn" target="_top" to='/' >BACK TO HOME</Link>
             </div>
-            <Footer />
+            
         </>
     )
 }
